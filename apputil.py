@@ -16,3 +16,6 @@ def kmeans_diamonds(n, k):
   
     X_subset = diamonds_numeric.head(n)
     return kmeans(X_subset, k)
+
+
+
