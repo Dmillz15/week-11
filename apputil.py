@@ -18,4 +18,15 @@ def kmeans_diamonds(n, k):
     return kmeans(X_subset, k)
 
 
+def kmeans_timer(n, k, n_iter=5):
+   
+    runtimes = []
+
+    for _ in range(n_iter):
+        start = time()
+        _ = kmeans_diamonds(n, k)
+        elapsed = time() - start
+        runtimes.append(elapsed)
+
+    return sum(runtimes) / len(runtimes)
 
