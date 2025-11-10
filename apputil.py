@@ -1,6 +1,7 @@
 import seaborn as sns
 import numpy as np
 from sklearn.cluster import KMeans
+from time import time
 
 diamonds = sns.load_dataset("diamonds")
 
